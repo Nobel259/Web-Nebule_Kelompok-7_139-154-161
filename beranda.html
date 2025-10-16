@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebule | Home</title>
+  <style>
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: rgba(20, 24, 40, 0.95);
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #f0f5ff;
+      font-weight: 500;
+      padding: 0.3rem 1rem;
+      border-radius: 3px;
+    }
+    nav a.active, nav a:hover {
+      background: #2341a8;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 20px;
+      border-radius: 10px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin: 20px 0;
+      color: #b8d2ff;
+    }
+    .intro {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .intro h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #67aaff;
+    }
+    .intro p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #f0f5ff;
+    }
+    .planets-preview {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .planets-preview h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #67aaff;
+      text-align: center;
+    }
+    .planets-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .planet-card {
+      background: rgba(36, 42, 69, 0.9);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .planet-card:hover {
+      transform: translateY(-5px);
+    }
+    .planet-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #23253a;
+      margin-bottom: 15px;
+    }
+    .planet-card h3 {
+      font-size: 24px;
+      margin: 0 0 5px 0;
+      color: #fff;
+    }
+    .planet-card .tag {
+      font-size: 14px;
+      color: #ffac3b;
+      margin-bottom: 10px;
+    }
+    .planet-card p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #b8d2ff;
+      margin: 0;
+    }
+    .explore-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #2341a8;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+    .explore-link:hover {
+      background: #1a2e7a;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 36px; }
+      .hero p { font-size: 18px; }
+      .planets-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="home.html" class="active">Home</a>
+    <a href="planets.html">Planet</a> 
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="hero">
+    <h1>SELAMAT DATANG DI NEBULE</h1>
+    <p>Jelajahi Keajaiban Tata Surya Bersama Kami</p>
+  </div>
+  <div class="intro">
+    <h2>Tentang Nebule</h2>
+    <p>Nebule adalah platform edukasi yang didedikasikan untuk menjelajahi planet-planet dalam tata surya kita. Dari Merkurius yang panas hingga Mars yang misterius, kami menyediakan informasi terkini, galeri gambar, dan penemuan terbaru tentang dunia luar angkasa.</p>
+    <p>Jelajahi halaman Planet untuk mempelajari lebih lanjut tentang setiap planet, atau hubungi kami untuk pertanyaan lebih lanjut.</p>
+  </div>
+  <div class="planets-preview">
+    <h2>Planet-Planet Tata Surya</h2>
+    <div class="planets-grid">
+      <div class="planet-card">
+        <a href="planets.html#merkurius">
+          <img src="Mer.png" alt="Merkurius">
+          <h3>MERKURIUS</h3>
+          <div class="tag">Planet Terdekat Matahari</div>
+          <p>Planet terkecil di tata surya dengan suhu ekstrem. Tidak memiliki atmosfer yang signifikan dan tidak memiliki bulan.</p>
+        </a>
+      </div>
+      <div class="planet-card">
+        <a href="planets.html#venus">
+          <img src="venus.png" alt="Venus">
+          <h3>VENUS</h3>
+          <div class="tag">Planet Terekstrem</div>
+          <p>Planet terpanas dengan atmosfer tebal yang terdiri dari karbon dioksida. Rotasi mundur dan efek rumah kaca yang kuat.</p>
+        </a>
+      </div>
+      <div class="planet-card">
+        <a href="planets.html#bumi">
+          <img src="bumi.png" alt="Bumi">
+          <h3>BUMI</h3>
+          <div class="tag">Planet Kehidupan</div>
+          <p>Satu-satunya planet yang diketahui memiliki kehidupan. Memiliki atmosfer yang mendukung dan satu bulan alami.</p>
+        </a>
+      </div>
+      <div class="planet-card">
+        <a href="planets.html#mars">
+          <img src="mars.png" alt="Mars">
+          <h3>MARS</h3>
+          <div class="tag">Planet Merah: Berpotensi Dihuni</div>
+          <p>Dikenal sebagai planet merah karena oksida besi. Memiliki dua bulan kecil dan sedang dieksplorasi untuk misi manusia.</p>
+        </a>
+      </div>
+    </div>
+    <a href="planets.html" class="explore-link">Jelajahi Semua Planet</a>
+  </div>
+</body>
+</html>
