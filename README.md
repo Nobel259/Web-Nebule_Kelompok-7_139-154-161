@@ -1,5 +1,5 @@
 # Nebule | Eksplorasi Tata Surya
-Website Nebule ada website yang memberikan informasi seputar planet di dalam tata surya. Berguna untuk menambah wawasan bagi semua orang terutama bagi peminat antariksa. website ini dibuat menggunakan HTML, CSS, dan JavaScript.
+Website Nebule ada website yang memberikan informasi seputar planet di dalam tata surya. Bertujuan untuk menambah wawasan bagi semua orang terutama bagi peminat antariksa. website ini dibuat menggunakan HTML, CSS, dan JavaScript.
 
 # Home Page
 Deskripsi:
